@@ -7,8 +7,8 @@
 <script>
 function payment() {
 let PV = document.getElementById("PV").value;
-let r = document.getElementById("Y").value;
-let n = document.getElementById("%").value;
+let r = document.getElementById("interest").value;
+let n = document.getElementById("Y").value;
 let P = ((r/100/12) * PV)/(1-(1+(r/100/12))**-(n*12));
 document.getElementById("ans").innerHTML = "$" + P.toFixed(2);
 }
@@ -20,7 +20,7 @@ document.getElementById("ans").innerHTML = "$" + P.toFixed(2);
 
 <p> Present Value -- Amount you wish to borrow: <input id="PV"> <br>
 <br> Years: <input id="Y"> <br>
-<br> % -- Annual interest rate: <input id="%"> <br>
+<br> % -- Annual interest rate: <input id="interest"> <br>
 <button onclick="payment()"> Calculate the Monthly Payment </button>
 </p>
 <p>
