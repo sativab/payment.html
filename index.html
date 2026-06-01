@@ -10,7 +10,7 @@ let PV = document.getElementById("PV").value;
 let r = document.getElementById("interest").value;
 let n = document.getElementById("Y").value;
 let P = ((r/100/12) * PV)/(1-(1+(r/100/12))**-(n*12));
-document.getElementById("ans").innerHTML = "If you take out a loan for $"+ PV +" for "+ n +" years at "+ r +" % your monthly payment would be $" + P.toFixed(2);
+document.getElementById("ans").innerHTML = "If you take out a loan for $"+ PV +" for "+ n +" years at "+ r +" %, Your monthly payment would be $" + P.toFixed(2);
 }
 </script>
 
